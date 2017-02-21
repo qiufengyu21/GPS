@@ -3,29 +3,11 @@
 
     <item
         is-multidex="true"
-        jar="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2549e73f91ba88087d3495451184d1299b7e4437">
-        <dex dex="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ac09995163c2bf1c9f26f3d4a88bc6b645c67fb0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.1_70af7d56baa0f38a7ea75dce6a1bb7d970c0751b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a5de563f4e7e698e12794b837a7b7e83c8bd5589">
+        sha1="64e1ae6d363506c4730d773a15a5e8a68f266a20">
         <dex dex="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6f1a3d8c065a5d27cf81bcd65201d4430e2ca274/classes.dex" />
     </item>
     <item
@@ -39,15 +21,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_0521aaff03e74cf7d12fa3938beabaa46e92128c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -57,39 +30,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_b339bd3fcf79e5272343116c1d2b2a3c152f3e8c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
         <dex dex="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.1_b86c7f2e73b01e337fc7ab8fd8e2a36c9dc2c8b4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.1_7431a0d492f40daee1210ee40ca9ea0c769e3117/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.1_47797f84102b6672958285dd6db6491a61aa41ca/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -108,6 +54,60 @@
         revision="25.0.2"
         sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
         <dex dex="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_e59adede3fceec03cbbb70d3da382e93bf7c0ae5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2bfaaa9b0079495628dbf686e68eb493d8c6535c">
+        <dex dex="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ac09995163c2bf1c9f26f3d4a88bc6b645c67fb0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.1_70af7d56baa0f38a7ea75dce6a1bb7d970c0751b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_0521aaff03e74cf7d12fa3938beabaa46e92128c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_b339bd3fcf79e5272343116c1d2b2a3c152f3e8c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.1_7431a0d492f40daee1210ee40ca9ea0c769e3117/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/Users/yuqiufeng/AndroidStudioProjects/GPS/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.1_47797f84102b6672958285dd6db6491a61aa41ca/classes.dex" />
     </item>
 
 </items>
