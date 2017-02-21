@@ -84,7 +84,7 @@ public class StudentActivity extends AppCompatActivity {
                         , 10);
             }
             return;
-        }
+        } else{
         // this code won't execute IF permissions are not allowed, because in the line above there is return statement.
         b.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,5 +93,5 @@ public class StudentActivity extends AppCompatActivity {
                 locationManager.requestLocationUpdates("gps", 1000, 0, listener);
             }
         });
-    }
+    }}
 }
