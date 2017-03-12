@@ -44,6 +44,7 @@ public class Student extends AppCompatActivity {
         // create a java timestamp object that represents the current time (i.e., a "current timestamp")
         Calendar calendar = Calendar.getInstance();
         java.sql.Timestamp ourJavaTimestampObject = new java.sql.Timestamp(calendar.getTime().getTime());
+        //set the edit view to the current time and make it uneditable
         t_timetext.setText(String.valueOf(ourJavaTimestampObject));
         time = String.valueOf(ourJavaTimestampObject);
         t_timetext.setKeyListener(null);
