@@ -17,6 +17,9 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class Student extends AppCompatActivity {
     EditText t_nametext, t_idtext, t_timetext, t_lontext, t_lattext;
@@ -38,6 +41,13 @@ public class Student extends AppCompatActivity {
         t_idtext = (EditText) findViewById(R.id.t_idtext);
         t_timetext = (EditText) findViewById(R.id.t_timetext);
 
+        // create a java timestamp object that represents the current time (i.e., a "current timestamp")
+        Calendar calendar = Calendar.getInstance();
+        java.sql.Timestamp ourJavaTimestampObject = new java.sql.Timestamp(calendar.getTime().getTime());
+        t_timetext.setText(String.valueOf(ourJavaTimestampObject));
+        time = String.valueOf(ourJavaTimestampObject);
+        t_timetext.setKeyListener(null);
+
         tv_lat.append(lat);
         tv_lon.append(lon);
     }
@@ -45,9 +55,6 @@ public class Student extends AppCompatActivity {
     public void sendData(View view) {
         name = t_nametext.getText().toString();
         unityid = t_idtext.getText().toString();
-        time = t_timetext.getText().toString();
-        //lon = t_lontext.getText().toString();
-        //lat = t_lattext.getText().toString();
 
         BackgroundTask backgroundTask = new BackgroundTask();
         backgroundTask.execute(name, unityid, time, lon, lat);
