@@ -2,6 +2,7 @@ package com.example.android.gps;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.location.Location;
@@ -10,6 +11,7 @@ import android.location.LocationManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,6 +21,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     private TextView longitudeField;
     private LocationManager locationManager;
     private String provider;
+    String lon;
+    String lat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,6 +90,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     public void onLocationChanged(Location location) {
         latituteField.setText(String.valueOf(location.getLatitude()));
         longitudeField.setText(String.valueOf(location.getLongitude()));
+        lat = String.valueOf(location.getLatitude());
+        lon = String.valueOf(location.getLongitude());
     }
 
     @Override
@@ -104,4 +110,19 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         Toast.makeText(this, "Disabled provider " + provider,
                 Toast.LENGTH_SHORT).show();
     }
+
+    public void iAmAStudent(View view) {
+        Intent intent = new Intent(this, Student.class);
+        intent.putExtra("lon", lon);
+        intent.putExtra("lat", lat);
+        startActivity(intent);
+    }
+
+    public void iAmAProfessor(View view) {
+        Intent intent = new Intent(this, Professor.class);
+        intent.putExtra("lon", lon);
+        intent.putExtra("lat", lat);
+        startActivity(intent);
+    }
+
 }

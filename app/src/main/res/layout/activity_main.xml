@@ -4,11 +4,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
+    <TextView
+        android:id="@+id/tv_currentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You Current Location:"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp"/>
+
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dip"
         android:orientation="horizontal" >
 
         <TextView
@@ -53,5 +61,29 @@
             android:textSize="20dip" >
         </TextView>
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Please Choose"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="I am a student"
+        android:onClick="iAmAStudent"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="I am a professor"
+        android:onClick="iAmAProfessor"/>
 
 </LinearLayout>

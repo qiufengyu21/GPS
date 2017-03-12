@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_info_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.gps.Student">
+
+    <EditText
+        android:id="@+id/t_nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/t_idtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_nametext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="UnityID" />
+
+    <EditText
+        android:id="@+id/t_timetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_idtext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Time" />
+
+
+<!--    <EditText
+        android:id="@+id/t_lontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_timetext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Longitude" />
+
+    <EditText
+        android:id="@+id/t_lattext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_lontext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Latitude" />-->
+
+    <Button
+        android:id="@+id/b_sendData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendData"
+        android:text="Send Data" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:text="You Current Location:" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="13dp"
+        android:text="Latitude: " />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="Longitude: " />
+
+</RelativeLayout>
