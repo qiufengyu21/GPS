@@ -47,6 +47,8 @@ public class Professor extends AppCompatActivity {
         } else {
             Intent intent = new Intent(this, DisplayListView.class);
             intent.putExtra("json_data", result_string);
+            intent.putExtra("prof_lat", lat);
+            intent.putExtra("prof_lon", lon);
             startActivity(intent);
         }
     }
@@ -95,6 +97,11 @@ public class Professor extends AppCompatActivity {
             TextView textView = (TextView) findViewById(R.id.textView4);
             textView.setText(result);
             result_string = result;
+            if (result_string == null) {
+                Toast.makeText(getApplicationContext(), "Failed to retrieve the JSON file, please try again.", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(getApplicationContext(), "Successfully retrieved the JSON file!", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 }

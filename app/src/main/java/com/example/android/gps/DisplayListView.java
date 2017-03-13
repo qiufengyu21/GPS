@@ -11,7 +11,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class DisplayListView extends AppCompatActivity {
-    String json_string;
+    String json_string, prof_lat, prof_lon;
     JSONObject jsonObject;
     JSONArray jsonArray;
     StudentLocationsAdapter studentLocationsAdapter;
@@ -27,13 +27,14 @@ public class DisplayListView extends AppCompatActivity {
         studentLocationsAdapter = new StudentLocationsAdapter(this, R.layout.row_layout);
         listView.setAdapter(studentLocationsAdapter);
         json_string = getIntent().getExtras().getString("json_data");
-
+        prof_lat = getIntent().getExtras().getString("prof_lat");
+        prof_lon = getIntent().getExtras().getString("prof_lon");
         try {
             jsonObject = new JSONObject(json_string);
             jsonArray = jsonObject.getJSONArray("server response");
             int count = 0;
             String name, unityid, time, lon, lat;
-            Log.d("displayview", String.valueOf(jsonArray.length()));
+
             while (count < jsonArray.length()) {
                 JSONObject jo = jsonArray.getJSONObject(count);
                 name = jo.getString("name");
@@ -42,7 +43,7 @@ public class DisplayListView extends AppCompatActivity {
                 lon = jo.getString("lon");
                 lat = jo.getString("lat");
 
-                StudentLocations studentLocations = new StudentLocations(name, unityid, time, lon, lat);
+                StudentLocations studentLocations = new StudentLocations(name, unityid, time, lon, lat, prof_lat, prof_lon);
 
                 studentLocationsAdapter.add(studentLocations);
                 count++;
@@ -51,6 +52,8 @@ public class DisplayListView extends AppCompatActivity {
             e.printStackTrace();
         }
 
+//        tv = (TextView) findViewById(R.id.textView6);
+//        tv.setText(prof_lat + " and " + prof_lon);
 
     }
 }

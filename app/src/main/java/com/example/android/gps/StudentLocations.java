@@ -6,13 +6,16 @@ package com.example.android.gps;
 
 public class StudentLocations {
     private String name, unityid, time, lon, lat;
+    private String prof_lat, prof_lon;
 
-    public StudentLocations(String name, String unityid, String time, String lon, String lat) {
+    public StudentLocations(String name, String unityid, String time, String lon, String lat, String prof_lat, String prof_lon) {
         this.setName(name);
         this.setUnityid(unityid);
         this.setTime(time);
         this.setLon(lon);
         this.setLat(lat);
+        this.setProf_lat(prof_lat);
+        this.setProf_lon(prof_lon);
     }
 
     public String getName() {
@@ -53,5 +56,21 @@ public class StudentLocations {
 
     public void setLat(String lat) {
         this.lat = lat;
+    }
+
+    public String getProf_lat() {
+        return prof_lat;
+    }
+
+    public void setProf_lat(String prof_lat) {
+        this.prof_lat = prof_lat;
+    }
+
+    public String getProf_lon() {
+        return prof_lon;
+    }
+
+    public void setProf_lon(String prof_lon) {
+        this.prof_lon = prof_lon;
     }
 }
