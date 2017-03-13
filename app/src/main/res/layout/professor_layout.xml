@@ -18,7 +18,7 @@
         android:layout_marginLeft="19dp"
         android:layout_marginStart="19dp"
         android:text="Welcome Professor"
-        android:textSize="30dp"/>
+        android:textSize="30dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -27,9 +27,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/header"
-        android:layout_marginTop="30dp"
         android:layout_marginLeft="19dp"
         android:layout_marginStart="19dp"
+        android:layout_marginTop="30dp"
         android:text="You Current Location:" />
 
     <TextView
@@ -55,29 +55,30 @@
         android:id="@+id/b_getData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:onClick="getData"
         android:text="Get Data"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:textSize="25dp" />
 
     <Button
         android:id="@+id/b_parseData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/b_getData"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
         android:onClick="parseData"
         android:text="Parse Data"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:textSize="25dp" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_below="@+id/textView3"
-        android:text=".........." />
+    <!--    <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView3"
+            android:text=".........." />-->
 
 </RelativeLayout>

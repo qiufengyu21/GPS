@@ -94,8 +94,8 @@ public class Professor extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result) {
-            TextView textView = (TextView) findViewById(R.id.textView4);
-            textView.setText(result);
+//            TextView textView = (TextView) findViewById(R.id.textView4);
+//            textView.setText(result);
             result_string = result;
             if (result_string == null) {
                 Toast.makeText(getApplicationContext(), "Failed to retrieve the JSON file, please try again.", Toast.LENGTH_SHORT).show();
