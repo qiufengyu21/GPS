@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Student" />
-        <activity android:name=".Professor"></activity>
+        <activity android:name=".Professor" />
+        <activity android:name=".DisplayListView"></activity>
     </application>
 
 </manifest>
