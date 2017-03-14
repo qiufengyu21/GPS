@@ -51,6 +51,14 @@
         android:layout_below="@+id/textView2"
         android:text="Longitude: " />
 
+    <TextView
+        android:id="@+id/getDataInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b_getData"
+        android:layout_centerHorizontal="true"
+        android:text="First, please get data from the database" />
+
     <Button
         android:id="@+id/b_getData"
         android:layout_width="wrap_content"
@@ -61,6 +69,15 @@
         android:text="Get Data"
         android:textSize="25dp" />
 
+    <TextView
+        android:id="@+id/parseDataInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_getData"
+        android:layout_marginTop="23dp"
+        android:layout_centerHorizontal="true"
+        android:text="Then click this button" />
+
     <Button
         android:id="@+id/b_parseData"
         android:layout_width="wrap_content"
@@ -69,7 +86,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
         android:onClick="parseData"
-        android:text="Parse Data"
+        android:text="See Attendance"
         android:textSize="25dp" />
 
     <!--    <TextView
