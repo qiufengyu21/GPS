@@ -14,5 +14,6 @@ Your name, UnityID, current timestamp, along with your current location informat
 
 The attendance ListView will be something list this:
 
-     Name        UnityID             Time               Distance(Meters)        Present/Absent
-  Qiufeng Yu      qyu4        2017-03-13 16:45:21           5.72M                  Present
+| Name       | UnityID | Time                | Distance(meters) | Present/Absent |
+|------------|---------|---------------------|------------------|----------------|
+| Qiufeng Yu | qyu4    | 2017-03-13 16:45:21 | 5.73m            | Present        |
