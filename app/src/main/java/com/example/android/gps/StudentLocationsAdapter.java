@@ -55,6 +55,7 @@ public class StudentLocationsAdapter extends ArrayAdapter {
             studentLocationHolder.tv_time = (TextView) row.findViewById(R.id.textView3);
             studentLocationHolder.tv_lon = (TextView) row.findViewById(R.id.textView4);
             studentLocationHolder.tv_lat = (TextView) row.findViewById(R.id.textView5);
+            studentLocationHolder.tv_lat2 = (TextView) row.findViewById(R.id.textView6);
             row.setTag(studentLocationHolder);
         } else {
             studentLocationHolder = (StudentLocationHolder) row.getTag();
@@ -71,19 +72,21 @@ public class StudentLocationsAdapter extends ArrayAdapter {
         double lat = Double.parseDouble(studentLocations.getLat());
         double lon = Double.parseDouble(studentLocations.getLon());
         double distance = distance(prof_lat, prof_lon, lat, lon, "M");
-        Double rawDistance = BigDecimal.valueOf(distance).setScale(3, RoundingMode.HALF_UP).doubleValue();
-        studentLocationHolder.tv_lon.setText(String.valueOf(rawDistance));
-        if (distance <= 100) {
+        Double rawDistance = BigDecimal.valueOf(distance).setScale(2, RoundingMode.HALF_UP).doubleValue();
+        studentLocationHolder.tv_lon.setText(String.valueOf(rawDistance) + "M");
+        if (distance <= 10) {
             studentLocationHolder.tv_lat.setText("Present");
+            studentLocationHolder.tv_lat2.setText("");
         } else {
-            studentLocationHolder.tv_lat.setText("Absent");
+            studentLocationHolder.tv_lat.setText("");
+            studentLocationHolder.tv_lat2.setText("Absent");
         }
 
         return row;
     }
 
     static class StudentLocationHolder {
-        TextView tv_name, tv_unityid, tv_time, tv_lon, tv_lat, tv_distance, tv_isPresent;
+        TextView tv_name, tv_unityid, tv_time, tv_lon, tv_lat, tv_lat2, tv_distance, tv_isPresent;
     }
 
 

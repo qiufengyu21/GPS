@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="50dp">
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView1"
@@ -41,6 +42,16 @@
         android:layout_height="match_parent"
         android:layout_toRightOf="@+id/textView4"
         android:gravity="center"
-        android:text="Longitude" />
+        android:text="Longitude"
+        android:textColor="#32CD32" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/textView4"
+        android:gravity="center"
+        android:text="Longitude"
+        android:textColor="#FF0000" />
 
 </RelativeLayout>
