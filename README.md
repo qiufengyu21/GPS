@@ -17,3 +17,5 @@ The attendance ListView will be something list this:
 |    Name    | UnityID |         Time        | Distance(meters) | Present/Absent |
 |:----------:|:-------:|:-------------------:|:----------------:|:--------------:|
 | Qiufeng Yu |   qyu4  | 2017-03-13 16:45:21 |       5.73m      |     Present    |
+|  Sam Smith |  ssmith | 2017-03-13 16:45:15 |     1024.87m     |     Absent     |
+|  Joe Salad |  jsalad | 2017-03-13 16:46:31 |      10.65m      |     Present    |
