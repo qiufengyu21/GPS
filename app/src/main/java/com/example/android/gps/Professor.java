@@ -5,6 +5,7 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,7 +19,8 @@ import java.net.URL;
 
 public class Professor extends AppCompatActivity {
     String lon, lat;
-    TextView tv_lon, tv_lat;
+    TextView tv_lon, tv_lat, get_info, parse_info;
+    Button b_getData, b_parseData;
 
     String JSON_STRING;
     String result_string;
@@ -33,6 +35,15 @@ public class Professor extends AppCompatActivity {
 
         tv_lat = (TextView) findViewById(R.id.textView2);
         tv_lon = (TextView) findViewById(R.id.textView3);
+        get_info = (TextView)findViewById(R.id.getDataInstruction);
+        parse_info = (TextView)findViewById(R.id.parseDataInstruction);
+
+        b_getData = (Button) findViewById(R.id.b_getData);
+        b_parseData = (Button) findViewById(R.id.b_parseData);
+
+        parse_info.setVisibility(View.GONE);
+        b_parseData.setVisibility(View.GONE);
+
         tv_lat.append(lat);
         tv_lon.append(lon);
     }
@@ -101,6 +112,11 @@ public class Professor extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Failed to retrieve the JSON file, please try again.", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(getApplicationContext(), "Successfully retrieved the JSON file!", Toast.LENGTH_SHORT).show();
+                //parse_info.setVisibility(View.VISIBLE);
+                b_parseData.setVisibility(View.VISIBLE);
+
+                get_info.setVisibility(View.INVISIBLE);
+                b_getData.setVisibility(View.INVISIBLE);
             }
         }
     }
