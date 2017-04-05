@@ -2,22 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_currentLocation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="You Current Location:"
-        android:layout_marginLeft="10dp"
         android:layout_marginBottom="20dp"
-        android:textSize="30dp"/>
+        android:layout_marginLeft="10dp"
+        android:text="You Current Location:"
+        android:textSize="30dp" />
 
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/TextView01"
@@ -26,22 +26,20 @@
             android:layout_marginLeft="10dip"
             android:layout_marginRight="5dip"
             android:text="Latitude: "
-            android:textSize="20dip" >
-        </TextView>
+            android:textSize="20dip"></TextView>
 
         <TextView
             android:id="@+id/TextView02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="unknown"
-            android:textSize="20dip" >
-        </TextView>
+            android:textSize="20dip"></TextView>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/TextView03"
@@ -50,16 +48,14 @@
             android:layout_marginLeft="10dip"
             android:layout_marginRight="5dip"
             android:text="Longitute: "
-            android:textSize="20dip" >
-        </TextView>
+            android:textSize="20dip"></TextView>
 
         <TextView
             android:id="@+id/TextView04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="unknown"
-            android:textSize="20dip" >
-        </TextView>
+            android:textSize="20dip"></TextView>
     </LinearLayout>
 
     <TextView
@@ -68,22 +64,24 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:text="Please Choose"
-        android:textSize="20dp"/>
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="I am a student"
-        android:onClick="iAmAStudent"/>
+        android:layout_marginTop="20dp"
+        android:onClick="iAmAStudent"
+        android:text="Login as Student"
+        android:textSize="25dp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="I am a professor"
-        android:onClick="iAmAProfessor"/>
+        android:layout_marginTop="50dp"
+        android:onClick="iAmAProfessor"
+        android:text="Login as Professor"
+        android:textSize="25dp" />
 
 </LinearLayout>
