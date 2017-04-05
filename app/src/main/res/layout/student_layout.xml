@@ -36,12 +36,11 @@
         android:id="@+id/t_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/t_idtext"
-        android:layout_alignStart="@+id/t_idtext"
         android:layout_below="@+id/t_idtext"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="Your current time is shown below:"
-        android:textSize="15dp" />
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/t_timetext"
@@ -53,7 +52,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Time"
-        android:textSize="15dp" />
+        android:textSize="20dp" />
 
 
     <!--    <EditText
