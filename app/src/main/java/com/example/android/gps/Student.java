@@ -22,10 +22,10 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class Student extends AppCompatActivity {
-    EditText t_nametext, t_idtext, t_timetext, t_lontext, t_lattext;
+    EditText t_nametext, t_idtext, t_lontext, t_lattext;
     String name, unityid, time;
     String lon, lat;
-    TextView tv_lon, tv_lat;
+    TextView tv_lon, tv_lat, t_timetext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class Student extends AppCompatActivity {
         tv_lon = (TextView) findViewById(R.id.textView3);
         t_nametext = (EditText) findViewById(R.id.t_nametext);
         t_idtext = (EditText) findViewById(R.id.t_idtext);
-        t_timetext = (EditText) findViewById(R.id.t_timetext);
+        t_timetext = (TextView) findViewById(R.id.t_timetext);
 
         // create a java timestamp object that represents the current time (i.e., a "current timestamp")
         Calendar calendar = Calendar.getInstance();

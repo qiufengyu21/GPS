@@ -16,10 +16,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Enter your Name"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/t_idtext"
@@ -29,42 +29,54 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="UnityID" />
+        android:hint="Enter your UnityID"
+        android:inputType="textPersonName" />
 
-    <EditText
+    <TextView
+        android:id="@+id/t_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/t_idtext"
+        android:layout_alignStart="@+id/t_idtext"
+        android:layout_below="@+id/t_idtext"
+        android:layout_marginTop="20dp"
+        android:text="Your current time is shown below:"
+        android:textSize="15dp" />
+
+    <TextView
         android:id="@+id/t_timetext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/t_idtext"
+        android:layout_below="@+id/t_time"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="6dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Time" />
+        android:text="Time"
+        android:textSize="15dp" />
 
 
-<!--    <EditText
-        android:id="@+id/t_lontext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/t_timetext"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Longitude" />
+    <!--    <EditText
+            android:id="@+id/t_lontext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t_timetext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Longitude" />
 
-    <EditText
-        android:id="@+id/t_lattext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/t_lontext"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Latitude" />-->
+        <EditText
+            android:id="@+id/t_lattext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t_lontext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Latitude" />-->
 
     <Button
         android:id="@+id/b_sendData"
@@ -84,7 +96,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="19dp"
         android:layout_marginStart="19dp"
-        android:text="You Current Location:" />
+        android:text="You Current Location:"
+        android:textColor="#ff0000" />
 
     <TextView
         android:id="@+id/textView2"
@@ -94,7 +107,8 @@
         android:layout_alignStart="@+id/textView"
         android:layout_below="@+id/textView"
         android:layout_marginTop="13dp"
-        android:text="Latitude: " />
+        android:text="Latitude: "
+        android:textColor="#ff0000" />
 
     <TextView
         android:id="@+id/textView3"
@@ -103,6 +117,7 @@
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignStart="@+id/textView2"
         android:layout_below="@+id/textView2"
-        android:text="Longitude: " />
+        android:text="Longitude: "
+        android:textColor="#ff0000" />
 
 </RelativeLayout>
