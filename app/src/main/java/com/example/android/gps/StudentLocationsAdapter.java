@@ -74,7 +74,7 @@ public class StudentLocationsAdapter extends ArrayAdapter {
         double distance = distance(prof_lat, prof_lon, lat, lon, "M");
         Double rawDistance = BigDecimal.valueOf(distance).setScale(2, RoundingMode.HALF_UP).doubleValue();
         studentLocationHolder.tv_lon.setText(String.valueOf(rawDistance) + "M");
-        if (distance <= 10) {
+        if (distance <= 50) {
             studentLocationHolder.tv_lat.setText("Present");
             studentLocationHolder.tv_lat2.setText("");
         } else {
