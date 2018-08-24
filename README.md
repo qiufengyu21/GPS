@@ -1,5 +1,6 @@
 # GPS
-
+![alt text](https://github.com/qiufengyu21/GPS/blob/master/1.png)
+![alt text](https://github.com/qiufengyu21/GPS/blob/master/2.png)
 ## Student
 1. Click the "I AM A STUDENT" button
 2. Enter your name, UnityID
